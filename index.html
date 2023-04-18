@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=ù, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Exchange Rate Calculator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -67,11 +68,17 @@
           <option value="VND">VND</option>
           <option value="ZAR">ZAR</option>
         </select>
-        <input type="number" id="amount-one" value="1" placeholder="0" />
+        <input
+          type="number"
+          id="amount-one"
+          min="1"
+          value="1"
+          placeholder="0"
+        />
       </div>
 
       <div class="swap-rate-container">
-        <button class="btn" id="rate">Swap</button>
+        <button class="btn" id="swap">Swap</button>
         <div class="rate" id="rate"></div>
       </div>
 
